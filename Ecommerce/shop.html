@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | EliteCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Elite<span>Commerce</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <i class="fas fa-search" id="search-icon"></i>
+                    <a href="wishlist.html" class="wishlist-count">
+                        <i class="far fa-heart"></i>
+                        <span class="badge" id="wishlist-badge">0</span>
+                    </a>
+                    <a href="cart.html" class="cart-count">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge" id="cart-badge">0</span>
+                    </a>
+                    <i class="fas fa-bars menu-toggle" id="menu-toggle"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="shop-container">
+            <!-- Sidebar Filters -->
+            <aside class="shop-sidebar">
+                <div class="filter-group">
+                    <h3>Search</h3>
+                    <div class="search-box">
+                        <input type="text" id="shop-search" placeholder="Search products...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li><label><input type="checkbox" class="category-filter" value="All" checked> All</label></li>
+                        <li><label><input type="checkbox" class="category-filter" value="Electronics"> Electronics</label></li>
+                        <li><label><input type="checkbox" class="category-filter" value="Fashion"> Fashion</label></li>
+                        <li><label><input type="checkbox" class="category-filter" value="Furniture"> Furniture</label></li>
+                        <li><label><input type="checkbox" class="category-filter" value="Accessories"> Accessories</label></li>
+                        <li><label><input type="checkbox" class="category-filter" value="Home Decor"> Home Decor</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-inputs">
+                        <input type="number" id="min-price" placeholder="Min">
+                        <span>-</span>
+                        <input type="number" id="max-price" placeholder="Max">
+                    </div>
+                    <button class="btn btn-primary" id="apply-price" style="width: 100%; margin-top: 10px;">Apply</button>
+                </div>
+            </aside>
+
+            <!-- Product Display Area -->
+            <div class="shop-content">
+                <div class="shop-header">
+                    <p id="product-count">Showing all products</p>
+                    <div class="sort-box">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="default">Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product-grid" id="shop-products">
+                    <!-- Products will be injected by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white;">Elite<span>Commerce</span></a>
+                    <p style="margin-top: 20px; color: #ccc;">Your one-stop destination for premium lifestyle products.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="cart.html">Order History</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form" style="display: flex; gap: 10px;">
+                        <input type="email" placeholder="Your Email" style="padding: 10px; border-radius: 5px; border: none; flex: 1;">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 20px;">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EliteCommerce. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/shop.js"></script>
+</body>
+</html>
