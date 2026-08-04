@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | AURORA Store</title>
+  <meta name="description" content="Get in touch with AURORA customer support team. Send us a message, find our phone number, email address, or office location.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-notice">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span>FREE Express Shipping on orders over $100</span> — Use code <strong>AURORA15</strong> for 15% OFF!
+      </div>
+      <div>Support: support@aurorastore.com | Call: +1 (800) 555-0199</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">A</div>
+          AURORA<span>.</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-search-wrapper">
+          <form class="header-search-form">
+            <input type="text" class="header-search-input" placeholder="Search products, brands...">
+            <button type="submit" class="header-search-btn" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <div class="header-search-results"></div>
+        </div>
+
+        <div class="header-actions">
+          <a href="wishlist.html" class="header-icon-btn" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="count-badge wishlist-count-badge">0</span>
+          </a>
+          <a href="cart.html" class="header-icon-btn" title="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="count-badge cart-count-badge">0</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding: 60px 0;">
+    <div class="container">
+      
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px auto;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 12px;">Get In Touch</h1>
+        <p style="color: var(--text-secondary); font-size: 1.05rem;">Have questions about an order, product specs, or shipping? We're here to help you 24 hours a day, 7 days a week.</p>
+      </div>
+
+      <div class="shop-products-grid" style="grid-template-columns: 1.2fr 1fr; gap: 40px; margin-bottom: 60px;">
+        
+        <!-- Contact Form Box -->
+        <div style="background: #FFF; padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+          <h2 style="font-size: 1.5rem; margin-bottom: 24px;">Send Us A Message</h2>
+          <form id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div>
+                <label style="display: block; font-weight: 500; margin-bottom: 6px;">Full Name *</label>
+                <input type="text" id="contactName" required style="width: 100%; height: 44px; padding: 0 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); outline: none;">
+              </div>
+              <div>
+                <label style="display: block; font-weight: 500; margin-bottom: 6px;">Email Address *</label>
+                <input type="email" id="contactEmail" required style="width: 100%; height: 44px; padding: 0 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); outline: none;">
+              </div>
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 500; margin-bottom: 6px;">Subject</label>
+              <input type="text" id="contactSubject" placeholder="e.g. Order Tracking Query" style="width: 100%; height: 44px; padding: 0 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); outline: none;">
+            </div>
+
+            <div>
+              <label style="display: block; font-weight: 500; margin-bottom: 6px;">Message *</label>
+              <textarea id="contactMessage" required rows="5" style="width: 100%; padding: 14px 16px; border: 1px solid var(--border-color); border-radius: var(--radius-md); outline: none; resize: vertical;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="height: 48px;">Send Message &rarr;</button>
+          </form>
+        </div>
+
+        <!-- Contact Info & Hours -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="background: #FFF; padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+            <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Contact Details</h3>
+            <p style="margin-bottom: 12px;"><strong>📍 Address:</strong><br><span style="color: var(--text-secondary);">742 Evergreen Terrace, Suite 100, New York, NY 10001</span></p>
+            <p style="margin-bottom: 12px;"><strong>📞 Phone Support:</strong><br><span style="color: var(--text-secondary);">+1 (800) 555-0199</span></p>
+            <p style="margin-bottom: 12px;"><strong>✉️ Email:</strong><br><span style="color: var(--text-secondary);">support@aurorastore.com</span></p>
+            <p><strong>🕒 Business Hours:</strong><br><span style="color: var(--text-secondary);">Mon - Fri: 8:00 AM - 8:00 PM EST<br>Sat - Sun: 9:00 AM - 5:00 PM EST</span></p>
+          </div>
+
+          <!-- Google Maps Placeholder -->
+          <div style="background: #E2E8F0; height: 220px; border-radius: var(--radius-lg); overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid var(--border-color);">
+            <div style="text-align: center; color: var(--dark-muted);">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom: 8px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <h4 style="margin-bottom: 4px;">AURORA Flagship Store</h4>
+              <span style="font-size: 0.85rem;">New York, NY (Google Maps Preview)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #FFF; margin-bottom: 16px;">
+            <div class="logo-icon">A</div> AURORA<span>.</span>
+          </a>
+          <p>AURORA is a modern e-commerce destination bringing you premium products, sustainable design, and unmatched customer care.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Twitter">tw</a>
+            <a href="#" class="social-link" title="Instagram">ig</a>
+            <a href="#" class="social-link" title="Facebook">fb</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=Electronics">Electronics</a></li>
+            <li><a href="shop.html?category=Fashion">Fashion</a></li>
+            <li><a href="shop.html?category=Accessories">Accessories</a></li>
+            <li><a href="shop.html?category=Beauty">Beauty</a></li>
+            <li><a href="shop.html?category=Home%20%26%20Living">Home & Living</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 742 Evergreen Terrace, Suite 100, New York, NY 10001</p>
+          <p>📞 +1 (800) 555-0199</p>
+          <p>✉️ support@aurorastore.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 AURORA Inc. All rights reserved. Designed with HTML5, CSS3 & Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("contactName").value;
+          if (window.showToast) {
+            window.showToast(`Thank you, ${name}! Your message has been received. We will contact you shortly.`, "success");
+          }
+          contactForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

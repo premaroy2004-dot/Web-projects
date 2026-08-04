@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS | Modern Premium E-Commerce Store</title>
+  <meta name="description" content="Discover premium electronics, minimalist fashion, artisan goods, and beauty products with fast express shipping at BTS.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shop.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-notice">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span>FREE Express Shipping on orders over $100</span> — Use code <strong>BTS15</strong> for 15% OFF!
+      </div>
+      <div>Support: support@premastore.com | Call: +91 9876543210</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">B</div>
+          BTS<span>.</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-search-wrapper">
+          <form class="header-search-form">
+            <input type="text" class="header-search-input" placeholder="Search products, brands...">
+            <button type="submit" class="header-search-btn" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <div class="header-search-results"></div>
+        </div>
+
+        <div class="header-actions">
+          <a href="wishlist.html" class="header-icon-btn" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="count-badge wishlist-count-badge">0</span>
+          </a>
+          <a href="cart.html" class="header-icon-btn" title="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="count-badge cart-count-badge">0</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-tag">✨ New Collection 2026</span>
+            <h1 class="hero-title">Elevate Your Everyday Style & Living.</h1>
+            <p class="hero-description">Experience minimalist aesthetics, premium craftsmanship, and cutting-edge technology. Handcrafted for the modern lifestyle.</p>
+            <div class="hero-cta">
+              <a href="shop.html" class="btn btn-primary">Shop Collection &rarr;</a>
+              <a href="shop.html?category=Electronics" class="btn btn-outline">Browse Electronics</a>
+            </div>
+          </div>
+          <div class="hero-image-box">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&auto=format&fit=crop&q=80" alt="PREMA  BTS Hero Banner" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories-section">
+      <div class="container">
+        <h2 class="section-title">Featured Categories</h2>
+        <p class="section-subtitle">Explore top categories curated for your specific needs</p>
+        <div class="categories-grid">
+          <a href="shop.html?category=Electronics" class="category-card">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>Electronics</h3>
+            <span>Audio, Smart Devices</span>
+          </a>
+          <a href="shop.html?category=Fashion" class="category-card">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>Fashion</h3>
+            <span>Watches, Eyewear</span>
+          </a>
+          <a href="shop.html?category=Accessories" class="category-card">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h3>Accessories</h3>
+            <span>Bags, Backpacks</span>
+          </a>
+          <a href="shop.html?category=Beauty" class="category-card">
+            <div class="category-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h3>Beauty</h3>
+            <span>Skincare & Cosmetics</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Selling Products -->
+    <section class="products-section container">
+      <h2 class="section-title">Best Selling Products</h2>
+      <p class="section-subtitle">Our customer-favorite items loved around the globe</p>
+      <div class="shop-products-grid" id="homeBestSellersGrid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="products-section container" style="margin-top: 60px;">
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-subtitle">Fresh additions to our modern catalog</p>
+      <div class="shop-products-grid" id="homeNewArrivalsGrid">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section container" style="margin-top: 80px;">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Over 10,000+ happy shoppers worldwide</p>
+      <div class="categories-grid">
+        <div class="category-card" style="text-align: left; align-items: flex-start;">
+          <div class="stars" style="margin-bottom: 12px;">★★★★★</div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">"The noise-canceling headphones are phenomenal! Super fast shipping and immaculate packaging."</p>
+          <strong style="color: var(--dark);">— Sarah Jenkins</strong>
+          <span style="font-size: 0.8rem;">Verified Buyer</span>
+        </div>
+        <div class="category-card" style="text-align: left; align-items: flex-start;">
+          <div class="stars" style="margin-bottom: 12px;">★★★★★</div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">"Minimalist leather watch looks even better in person. The craftsmanship is world-class."</p>
+          <strong style="color: var(--dark);">— Marcus Vance</strong>
+          <span style="font-size: 0.8rem;">Verified Buyer</span>
+        </div>
+        <div class="category-card" style="text-align: left; align-items: flex-start;">
+          <div class="stars" style="margin-bottom: 12px;">★★★★★</div>
+          <p style="color: var(--text-secondary); margin-bottom: 16px;">"Customer support resolved my address query in under 5 minutes. Outstanding service!"</p>
+          <strong style="color: var(--dark);">— Elena Rostova</strong>
+          <span style="font-size: 0.8rem;">Verified Buyer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Box -->
+    <div class="container">
+      <div class="newsletter-box">
+        <h2>Join the BTS Club</h2>
+        <p>Subscribe to receive exclusive deals, early access to new releases, and a 15% discount on your first order.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #FFF; margin-bottom: 16px;">
+            <div class="logo-icon">B</div> BTS<span>.</span>
+          </a>
+          <p>BTS is a modern e-commerce destination bringing you premium products, sustainable design, and unmatched customer care.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Twitter">tw</a>
+            <a href="#" class="social-link" title="Instagram">ig</a>
+            <a href="#" class="social-link" title="Facebook">fb</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=Electronics">Electronics</a></li>
+            <li><a href="shop.html?category=Fashion">Fashion</a></li>
+            <li><a href="shop.html?category=Accessories">Accessories</a></li>
+            <li><a href="shop.html?category=Beauty">Beauty</a></li>
+            <li><a href="shop.html?category=Home%20%26%20Living">Home & Living</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 742 Evergreen Terrace, Suite 100, New York, NY 10001</p>
+          <p>📞 +1 (800) 555-0199</p>
+          <p>✉️ support@btsstore.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 BTS Inc. All rights reserved. Designed with HTML5, CSS3 & Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const bestSellersGrid = document.getElementById("homeBestSellersGrid");
+      const newArrivalsGrid = document.getElementById("homeNewArrivalsGrid");
+
+      if (bestSellersGrid && window.products) {
+        const bestSellers = window.products.filter(p => p.isBestSeller).slice(0, 4);
+        bestSellersGrid.innerHTML = bestSellers.map(p => window.renderProductCard(p)).join('');
+      }
+
+      if (newArrivalsGrid && window.products) {
+        const newArrivals = window.products.filter(p => p.isNewArrival).slice(0, 4);
+        newArrivalsGrid.innerHTML = newArrivals.map(p => window.renderProductCard(p)).join('');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | AURORA Store</title>
+  <meta name="description" content="Review your shopping cart items, adjust quantities, calculate totals, and proceed to secure checkout.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-notice">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <span>FREE Express Shipping on orders over $100</span> — Use code <strong>AURORA15</strong> for 15% OFF!
+      </div>
+      <div>Support: support@aurorastore.com | Call: +1 (800) 555-0199</div>
+    </div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">A</div>
+          AURORA<span>.</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="shop.html" class="nav-link">Shop</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-search-wrapper">
+          <form class="header-search-form">
+            <input type="text" class="header-search-input" placeholder="Search products, brands...">
+            <button type="submit" class="header-search-btn" aria-label="Search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+          <div class="header-search-results"></div>
+        </div>
+
+        <div class="header-actions">
+          <a href="wishlist.html" class="header-icon-btn" title="Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="count-badge wishlist-count-badge">0</span>
+          </a>
+          <a href="cart.html" class="header-icon-btn" title="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span class="count-badge cart-count-badge">0</span>
+          </a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-page-wrapper">
+    <div class="container">
+      
+      <div class="page-header">
+        <h1>Your Shopping Cart</h1>
+      </div>
+
+      <div id="cartContentArea">
+        <!-- Rendered via JS -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: #FFF; margin-bottom: 16px;">
+            <div class="logo-icon">A</div> AURORA<span>.</span>
+          </a>
+          <p>AURORA is a modern e-commerce destination bringing you premium products, sustainable design, and unmatched customer care.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Twitter">tw</a>
+            <a href="#" class="social-link" title="Instagram">ig</a>
+            <a href="#" class="social-link" title="Facebook">fb</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">Shopping Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=Electronics">Electronics</a></li>
+            <li><a href="shop.html?category=Fashion">Fashion</a></li>
+            <li><a href="shop.html?category=Accessories">Accessories</a></li>
+            <li><a href="shop.html?category=Beauty">Beauty</a></li>
+            <li><a href="shop.html?category=Home%20%26%20Living">Home & Living</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p>📍 742 Evergreen Terrace, Suite 100, New York, NY 10001</p>
+          <p>📞 +1 (800) 555-0199</p>
+          <p>✉️ support@aurorastore.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 AURORA Inc. All rights reserved. Designed with HTML5, CSS3 & Vanilla JavaScript.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCartPage();
+      window.addEventListener("cartUpdated", renderCartPage);
+    });
+
+    function renderCartPage() {
+      const container = document.getElementById("cartContentArea");
+      if (!container || !window.CartManager) return;
+
+      const totals = window.CartManager.getTotals();
+
+      if (totals.items.length === 0) {
+        container.innerHTML = `
+          <div class="empty-state-box">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <h2>Your cart is currently empty</h2>
+            <p>Looks like you haven't added any products to your shopping cart yet.</p>
+            <a href="shop.html" class="btn btn-primary">Start Shopping &rarr;</a>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="cart-layout">
+          <div class="cart-table-card">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${totals.items.map(item => `
+                  <tr>
+                    <td data-label="Product">
+                      <div class="cart-item-info">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+                        <div>
+                          <div class="cart-item-title"><a href="product.html?id=${item.id}">${item.name}</a></div>
+                          <div class="cart-item-category">${item.category}</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td data-label="Price" class="cart-item-price">$${item.price.toFixed(2)}</td>
+                    <td data-label="Quantity">
+                      <div class="quantity-picker" style="height:36px;">
+                        <button onclick="window.CartManager.updateQuantity('${item.id}', ${item.quantity - 1})">-</button>
+                        <input type="number" value="${item.quantity}" readonly>
+                        <button onclick="window.CartManager.updateQuantity('${item.id}', ${item.quantity + 1})">+</button>
+                      </div>
+                    </td>
+                    <td data-label="Total" class="cart-item-total">$${item.totalPrice.toFixed(2)}</td>
+                    <td data-label="Action">
+                      <button class="btn-remove-item" onclick="window.CartManager.removeItem('${item.id}')" title="Remove Item">&times;</button>
+                    </td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+            <div style="padding: 16px 20px; display: flex; justify-content: space-between; background: var(--bg-light);">
+              <a href="shop.html" class="btn btn-outline" style="padding:8px 18px; font-size:0.85rem;">&larr; Continue Shopping</a>
+              <button class="btn btn-outline" onclick="window.CartManager.clearCart()" style="padding:8px 18px; font-size:0.85rem; color: var(--danger); border-color: var(--danger);">Clear Cart</button>
+            </div>
+          </div>
+
+          <!-- Order Summary Card -->
+          <div class="order-summary-card">
+            <h2 class="summary-title">Order Summary</h2>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span>$${totals.subtotal.toFixed(2)}</span>
+            </div>
+            ${totals.savings > 0 ? `
+              <div class="summary-row" style="color: var(--success);">
+                <span>Discount Savings</span>
+                <span>-$${totals.savings.toFixed(2)}</span>
+              </div>
+            ` : ''}
+            <div class="summary-row">
+              <span>Estimated Tax (8%)</span>
+              <span>$${totals.tax.toFixed(2)}</span>
+            </div>
+            <div class="summary-row">
+              <span>Shipping</span>
+              <span>${totals.shipping === 0 ? '<strong style="color: var(--success);">FREE</strong>' : '$' + totals.shipping.toFixed(2)}</span>
+            </div>
+            <div class="summary-row total-row">
+              <span>Grand Total</span>
+              <span class="total-amount">$${totals.grandTotal.toFixed(2)}</span>
+            </div>
+
+            <button class="btn btn-primary btn-checkout" onclick="window.showToast('Checkout simulated! In production, this redirects to Payment Gateway.', 'success')">
+              Proceed To Checkout &rarr;
+            </button>
+          </div>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>

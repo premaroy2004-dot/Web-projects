@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Shop Page Styles - Grid, Category Sidebar, Sort Controls
+   ========================================================================== */
+
+.shop-page-wrapper {
+  padding: 40px 0 80px 0;
+}
+
+.shop-header-banner {
+  background: linear-gradient(135deg, var(--dark) 0%, #1E293B 100%);
+  color: #FFF;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-header-banner h1 {
+  color: #FFF;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.shop-header-banner p {
+  color: #94A3B8;
+}
+
+/* Category Filter Chips / Bar */
+.category-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
+
+.category-filter-btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  background: #FFF;
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition-fast);
+  color: var(--text-primary);
+}
+
+.category-filter-btn:hover,
+.category-filter-btn.active {
+  background: var(--primary);
+  color: #FFF;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+}
+
+/* Shop Toolbar Controls */
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  margin-bottom: 32px;
+}
+
+.shop-result-count {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.shop-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shop-search-box {
+  position: relative;
+}
+
+.shop-search-box input {
+  padding: 8px 16px 8px 36px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.shop-search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+}
+
+.sort-select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-select-wrapper label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.sort-select-wrapper select {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  outline: none;
+  background: #FFF;
+  cursor: pointer;
+}
+
+/* Shop Grid */
+.shop-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.no-products-found {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: #FFF;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--border-color);
+}
+
+.no-products-found svg {
+  margin-bottom: 16px;
+}
+
+.no-products-found h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.no-products-found p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
